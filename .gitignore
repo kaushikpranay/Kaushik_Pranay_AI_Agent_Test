@@ -1,0 +1,10 @@
+# Environment variables (contains private API keys)
+.env
+
+# Python bytecode & virtual environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/

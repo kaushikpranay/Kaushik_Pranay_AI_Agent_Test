@@ -1,0 +1,107 @@
+{
+  "BM349936": {
+    "sku": "BM349936",
+    "status": "ok",
+    "path": "images\\BM349936.png"
+  },
+  "BM349937": {
+    "sku": "BM349937",
+    "status": "ok",
+    "path": "images\\BM349937.png"
+  },
+  "BM349938": {
+    "sku": "BM349938",
+    "status": "ok",
+    "path": "images\\BM349938.png"
+  },
+  "BM349939": {
+    "sku": "BM349939",
+    "status": "ok",
+    "path": "images\\BM349939.png"
+  },
+  "BM349940": {
+    "sku": "BM349940",
+    "status": "ok",
+    "path": "images\\BM349940.png"
+  },
+  "BM349941": {
+    "sku": "BM349941",
+    "status": "skipped"
+  },
+  "BM349942": {
+    "sku": "BM349942",
+    "status": "skipped"
+  },
+  "BM349943": {
+    "sku": "BM349943",
+    "status": "skipped"
+  },
+  "BM349944": {
+    "sku": "BM349944",
+    "status": "skipped"
+  },
+  "BM349945": {
+    "sku": "BM349945",
+    "status": "skipped"
+  },
+  "BM349946": {
+    "sku": "BM349946",
+    "status": "skipped"
+  },
+  "BM349947": {
+    "sku": "BM349947",
+    "status": "skipped"
+  },
+  "BM349948": {
+    "sku": "BM349948",
+    "status": "skipped"
+  },
+  "BM349949": {
+    "sku": "BM349949",
+    "status": "skipped"
+  },
+  "BM349950": {
+    "sku": "BM349950",
+    "status": "skipped"
+  },
+  "BM349951": {
+    "sku": "BM349951",
+    "status": "skipped"
+  },
+  "BM349952": {
+    "sku": "BM349952",
+    "status": "skipped"
+  },
+  "BM349953": {
+    "sku": "BM349953",
+    "status": "skipped"
+  },
+  "BM349954": {
+    "sku": "BM349954",
+    "status": "skipped"
+  },
+  "BM349955": {
+    "sku": "BM349955",
+    "status": "skipped"
+  },
+  "BM349956": {
+    "sku": "BM349956",
+    "status": "skipped"
+  },
+  "BM349957": {
+    "sku": "BM349957",
+    "status": "skipped"
+  },
+  "BM349958": {
+    "sku": "BM349958",
+    "status": "skipped"
+  },
+  "BM349959": {
+    "sku": "BM349959",
+    "status": "skipped"
+  },
+  "BM349960": {
+    "sku": "BM349960",
+    "status": "skipped"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "date_range": "2025-07-02 to 2025-09-01",
+  "total_orders": 10692,
+  "status_breakdown": {
+    "Processed": 9771,
+    "Cancelled": 452,
+    "OJ Shipping": 447,
+    "Pending": 22
+  },
+  "excluded_statuses": [
+    "Cancelled",
+    "Pending"
+  ],
+  "total_sales": 2667260.23,
+  "units_sold": 12281,
+  "valid_orders": 10218,
+  "distinct_skus": 3191,
+  "top_skus": [
+    {
+      "sku": "MFK-46119",
+      "item_name": "MFK-46119",
+      "revenue": 52085.34,
+      "units": 185,
+      "orders": 173
+    },
+    {
+      "sku": "IR150924",
+      "item_name": "IR150924",
+      "revenue": 38515.53,
+      "units": 30,
+      "orders": 30
+    },
+    {
+      "sku": "MFK-87865",
+      "item_name": "MFK-87865",
+      "revenue": 22728.01,
+      "units": 47,
+      "orders": 47
+    },
+    {
+      "sku": "MFK-107221",
+      "item_name": "MFK-107221",
+      "revenue": 20676.36,
+      "units": 56,
+      "orders": 56
+    },
+    {
+      "sku": "MFK-363098",
+      "item_name": "MFK-363098",
+      "revenue": 18439.8,
+      "units": 91,
+      "orders": 90
+    },
+    {
+      "sku": "MFK-62000",
+      "item_name": "MFK-62000",
+      "revenue": 18164.32,
+      "units": 57,
+      "orders": 55
+    },
+    {
+      "sku": "MFK-991105",
+      "item_name": "MFK-991105",
+      "revenue": 16988.13,
+      "units": 55,
+      "orders": 55
+    },
+    {
+      "sku": "MFK-394147",
+      "item_name": "MFK-394147",
+      "revenue": 14308.84,
+      "units": 39,
+      "orders": 35
+    },
+    {
+      "sku": "MFK-625892",
+      "item_name": "MFK-625892",
+      "revenue": 13360.78,
+      "units": 46,
+      "orders": 46
+    },
+    {
+      "sku": "IR412953",
+      "item_name": "IR412953",
+      "revenue": 13224.53,
+      "units": 14,
+      "orders": 14
+    }
+  ],
+  "low_moving_skus": [
+    {
+      "sku": "IR982698",
+      "item_name": "IR982698",
+      "revenue": 0.0,
+      "units": 1,
+      "orders": 1
+    },
+    {
+      "sku": "KHT-LSH-1647-GLX",
+      "item_name": "KHT-LSH-1647-GLX",
+      "revenue": 0.0,
+      "units": 2,
+      "orders": 1
+    },
+    {
+      "sku": "IR795505",
+      "item_name": "IR795505",
+      "revenue": 3.59,
+      "units": 2,
+      "orders": 2
+    },
+    {
+      "sku": "IR151932",
+      "item_name": "IR151932",
+      "revenue": 3.77,
+      "units": 1,
+      "orders": 1
+    },
+    {
+      "sku": "IR696598",
+      "item_name": "IR696598",
+      "revenue": 9.34,
+      "units": 1,
+      "orders": 1
+    },
+    {
+      "sku": "IR888836",
+      "item_name": "IR888836",
+      "revenue": 9.44,
+      "units": 1,
+      "orders": 1
+    },
+    {
+      "sku": "IR104020",
+      "item_name": "IR104020",
+      "revenue": 10.98,
+      "units": 1,
+      "orders": 1
+    },
+    {
+      "sku": "MFK-504705",
+      "item_name": "MFK-504705",
+      "revenue": 12.7,
+      "units": 1,
+      "orders": 1
+    },
+    {
+      "sku": "IR628654",
+      "item_name": "IR628654",
+      "revenue": 13.18,
+      "units": 1,
+      "orders": 1
+    },
+    {
+      "sku": "UQN-NH92292",
+      "item_name": "UQN-NH92292",
+      "revenue": 13.3,
+      "units": 1,
+      "orders": 1
+    }
+  ],
+  "carrier_breakdown": {
+    "FEDX": 7233,
+    "Carrier Not Mapped": 1593,
+    "LTL": 1237,
+    "UPSN": 629
+  },
+  "unmapped_carriers": 1593,
+  "insights": [
+    "Total completed revenue: $2,667,260.23 across 12,281 units and 10,218 valid order lines.",
+    "Top 10 SKUs account for 8.6% of total sales \u2014 heavy revenue concentration.",
+    "Cancellation rate: 4.2% (452 orders).",
+    "14.9% of orders (1,593) have unmapped carrier \u2014 data gap, not fulfilment failure.",
+    "Monthly revenue: Jul 2025: $1,219,866, Aug 2025: $1,395,310, Sep 2025: $52,084."
+  ],
+  "data_notes": [
+    "Cancelled and Pending excluded from revenue/units (not completed transactions).",
+    "OJ Shipping kept as valid (in fulfillment, not failed).",
+    "Carrier Not Mapped (1593 rows) kept in revenue but flagged as data gap.",
+    "36 Processed orders have $0 price \u2014 flagged, not dropped.",
+    "Vendor SKUs and sales SKUs share no common key (confirmed at load time)."
+  ]
+}

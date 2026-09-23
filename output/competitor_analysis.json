@@ -1,0 +1,98 @@
+[
+  {
+    "sku": "BM349936",
+    "competitor_product": "Benzara Jasi Power Reclining Chair with LED, Storage, USB Ports, Black",
+    "marketplace": "The Everything Depot",
+    "competitor_price": 965.58,
+    "our_price": 190.76,
+    "price_difference": 774.82,
+    "insight": "The search result [1] matches our exact SKU (BM349936) and specifications (Benzara Jasi Power Reclining Chair, Black Leather Aire, LED, Storage, USB Ports) with a competitor price of $965.58, significantly higher than our estimated price of $190.76.",
+    "our_price_method": "Estimated: SKU ranked by shipping weight among 25 vendor SKUs, percentile mapped onto real unit-price distribution from valid (non-cancelled, non-pending) sales orders. Not a verified price.",
+    "source_url": "https://theeverythingdepot.com/product/jasi-power-reclining-chair-with-led-storage-usb-ports-black-leather-aire-bm349936",
+    "status": "ok"
+  },
+  {
+    "sku": "BM349938",
+    "competitor_product": "Muumblus Oversized Chaise Lounge Chair Indoor, Plush Corduroy Cloud Floor Sofa Bed",
+    "marketplace": "Walmart",
+    "competitor_price": null,
+    "our_price": 653.67,
+    "price_difference": null,
+    "insight": "The search results provide a close match in terms of product type and material (Muumblus Oversized Chaise Lounge Chair made of plush corduroy in black/grey), but a specific numerical price is not mentioned in the text snippet. Therefore, the competitor price is listed as null, though it serves as a direct stylistic and material comparison for our oversized corduroy chaise lounge.",
+    "our_price_method": "Estimated: SKU ranked by shipping weight among 25 vendor SKUs, percentile mapped onto real unit-price distribution from valid (non-cancelled, non-pending) sales orders. Not a verified price.",
+    "source_url": "https://www.walmart.com/ip/Muumblus-Oversized-Chaise-Lounge-Chair-No-Assembly-Required-Cozy-Corduroy-Sofa-Bed-for-Living-Room-Black/16495619356",
+    "status": "ok"
+  },
+  {
+    "sku": "BM349940",
+    "competitor_product": null,
+    "marketplace": null,
+    "competitor_price": null,
+    "our_price": 87.26,
+    "price_difference": null,
+    "insight": "The provided search results contain DIY videos, store directories (Prime Furniture, Hello Cutie), and general articles about furniture makeovers, but do not list a specific, comparable competitor product with a clear price for a tall dresser chest matching the materials and color profile.",
+    "our_price_method": "Estimated: SKU ranked by shipping weight among 25 vendor SKUs, percentile mapped onto real unit-price distribution from valid (non-cancelled, non-pending) sales orders. Not a verified price.",
+    "source_url": "https://www.youtube.com/watch?v=tQ0oukVrYtI",
+    "status": "ok"
+  },
+  {
+    "sku": "BM349944",
+    "competitor_product": null,
+    "marketplace": null,
+    "competitor_price": null,
+    "our_price": 109.45,
+    "price_difference": null,
+    "insight": "The provided search results contain local business directories and map listings (such as glass and mirror shops and furniture stores like Havertys) rather than specific e-commerce product listings or prices for a white, gold, wood, mirror glass, and LED coffee table. Therefore, no clear comparable competitor product or price could be found in the results.",
+    "our_price_method": "Estimated: SKU ranked by shipping weight among 25 vendor SKUs, percentile mapped onto real unit-price distribution from valid (non-cancelled, non-pending) sales orders. Not a verified price.",
+    "source_url": "https://www.mapquest.com/us/new-york/coram-glass-mirror-465237326",
+    "status": "ok"
+  },
+  {
+    "sku": "BM349945",
+    "competitor_product": "C1149 Walnut Resin Table",
+    "marketplace": "Vanitii",
+    "competitor_price": 2840.0,
+    "our_price": 2816.51,
+    "price_difference": 23.49,
+    "insight": "While exact matches for a white, gold, wood, mirror glass, and LED coffee table set are not explicitly detailed in the search results, Vanitii offers a luxury living room table (C1149 Walnut Resin Table in Gold) priced at $2,840.00, which closely aligns with our estimated price point of $2,816.51 for high-end accent tables in this category.",
+    "our_price_method": "Estimated: SKU ranked by shipping weight among 25 vendor SKUs, percentile mapped onto real unit-price distribution from valid (non-cancelled, non-pending) sales orders. Not a verified price.",
+    "source_url": "https://vanitii.com/collections/led-coffee-table",
+    "status": "ok"
+  },
+  {
+    "sku": "BM349947",
+    "competitor_product": null,
+    "marketplace": null,
+    "competitor_price": null,
+    "our_price": 109.45,
+    "price_difference": null,
+    "insight": "No clear comparable competitor product or price could be found in the search results, as the results primarily refer to a market report and restaurant reviews rather than e-commerce sideboard buffet furniture listings.",
+    "our_price_method": "Estimated: SKU ranked by shipping weight among 25 vendor SKUs, percentile mapped onto real unit-price distribution from valid (non-cancelled, non-pending) sales orders. Not a verified price.",
+    "source_url": "https://finance.yahoo.com/news/global-marble-market-report-2020-122800395.html",
+    "status": "ok"
+  },
+  {
+    "sku": "BM349951",
+    "competitor_product": "AllModern Level Media Console",
+    "marketplace": "AllModern",
+    "competitor_price": 379.0,
+    "our_price": 301.35,
+    "price_difference": 77.65,
+    "insight": "The AllModern Level Media Console serves as a comparable media console option priced at $379 (marked down from $429). While exact color and material matches like Gray Walnut with LED were not detailed in the snippet, this provides a benchmark for media console pricing in the e-commerce market, sitting somewhat higher than our estimated price of $301.35.",
+    "our_price_method": "Estimated: SKU ranked by shipping weight among 25 vendor SKUs, percentile mapped onto real unit-price distribution from valid (non-cancelled, non-pending) sales orders. Not a verified price.",
+    "source_url": "https://www.homary.com/furniture/f0/tv-stands-media-consoles-21.html",
+    "status": "ok"
+  },
+  {
+    "sku": "BM349937",
+    "competitor_product": null,
+    "marketplace": null,
+    "competitor_price": null,
+    "our_price": 190.76,
+    "price_difference": null,
+    "insight": "The provided search results do not contain any specific competitor product listings, exact matching items, or pricing data for a power reclining chair in Ice Gray with Leather Aire and LED features.",
+    "our_price_method": "Estimated: SKU ranked by shipping weight among 25 vendor SKUs, percentile mapped onto real unit-price distribution from valid (non-cancelled, non-pending) sales orders. Not a verified price.",
+    "source_url": "https://finance.yahoo.com/news/joybird-expands-power-reclining-collection-143000780.html",
+    "status": "ok"
+  }
+]

@@ -1,0 +1,9 @@
+langgraph
+langchain-core
+google-genai
+tavily-python
+pandas
+openpyxl
+python-dotenv
+requests
+Pillow
