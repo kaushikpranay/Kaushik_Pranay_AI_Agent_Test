@@ -1,53 +1,110 @@
-# AI Engineer Agent — Screening Test Submission
+AI Engineer Agent - Screening Test
 
-**Track A — code-based agent.** Python + LangGraph.
+Python + LangGraph implementation for the e-commerce screening task.
 
-```bash
+Run
+
 python main.py --input test_data.xlsx
-```
 
-## What it does
+What it does
 
-Reads `test_data.xlsx` and runs four tasks automatically in one pipeline:
+The pipeline takes the Excel file and performs four tasks:
 
-1. **Content generation** — for each of the 25 vendor SKUs, generates a marketplace-ready title, description, 5 key features, and structured attributes using Google Gemini (structured JSON output).
-2. **Lifestyle images** — automated lifestyle image generation for product SKUs in modern living spaces. Runs 5 SKUs by default (cost control, as the brief allows); change `IMAGE_SUBSET` in `main.py` for more.
-3. **Competitor analysis** — searches for comparable products via Tavily, then uses Gemini to pick the closest match and extract price/insight. Runs 8 SKUs by default, picking one per product type for variety.
-4. **Sales analysis** — pure pandas, no API needed. Computes revenue, units, top/bottom SKUs, cancellation rate, carrier gaps, and business insights.
+1. Product content
+   
+   - Generates product title, description, 5 features, and attributes.
+   - Uses Gemini for the content generation.
 
-Pipeline flow (LangGraph StateGraph):
-```
-load_data → generate_content → generate_images → competitor_analysis → sales_analysis → write_output
-```
+2. Lifestyle images
+   
+   - Uses the product image as a reference.
+   - Generates lifestyle images for 5 products by default.
+   - Change "IMAGE_SUBSET" in "main.py" to process more products.
 
-Output goes to `output/` (JSON + CSV + markdown summary) and `images/` (one PNG per SKU).
+3. Competitor analysis
+   
+   - Searches the web using Tavily.
+   - Uses Gemini to find a comparable product and summarize the result.
+   - Processes 8 products by default.
 
-## Setup
+4. Sales analysis
+   
+   - Uses pandas only.
+   - Calculates total sales, units sold, top SKUs, low-moving SKUs, and other sales information.
 
-```bash
+The pipeline is:
+
+Load data
+    ↓
+Generate content
+    ↓
+Generate images
+    ↓
+Competitor analysis
+    ↓
+Sales analysis
+    ↓
+Write output
+
+Setup
+
+Install the dependencies:
+
 pip install -r requirements.txt
+
+Create the environment file:
+
 cp .env.example .env
-# Fill in GEMINI_API_KEY (required) and TAVILY_API_KEY (for competitor research)
+
+Add the required API keys:
+
+GEMINI_API_KEY=your_key
+TAVILY_API_KEY=your_key
+
+Then run:
+
 python main.py --input test_data.xlsx
-```
 
-## Data assumptions
+Data handling
 
-**SKU mismatch is intentional.** The 25 vendor SKUs and the ~10,700 sales rows share zero common SKUs — confirmed programmatically at load time. Content/image/competitor work runs on the vendor sheet; sales analysis runs independently on the sales sheet.
+The vendor and sales sheets do not have matching SKUs, so they are processed separately.
 
-**Product type extracted from Bullet 1.** The `Category` column is just "Furniture" for every row. The actual product type (power reclining chair, coffee table, TV stand, etc.) is parsed from the first bullet point with a simple regex.
+For the vendor data, the product type is taken from the first bullet because the category column contains the same general category for all products.
 
-**"Our price" is a modeled estimate.** Since there's no shared key to look up a real price, each vendor SKU is ranked by shipping weight (a standard furniture size/cost proxy) and mapped onto the real unit-price distribution from valid sales orders. Every competitor row's `our_price_method` field says this explicitly.
+There is no direct product price available for the vendor SKUs. For competitor analysis, the code therefore calculates an estimated price using product weight and the price distribution from the sales data. The output clearly marks this as an estimate.
 
-**Cancelled and Pending orders excluded** from revenue and units sold — they're not completed transactions. OJ Shipping is kept (order in fulfillment, not failed). Carrier Not Mapped rows (about 15%) are kept in revenue totals but flagged as a data gap.
+For sales analysis:
 
-## Files
+- "Processed" and "OJ Shipping" orders are included.
+- "Cancelled" and "Pending" orders are excluded.
+- Orders with missing shipping carriers are still included in sales totals and reported separately.
 
-```
-main.py              Everything — data loading, content gen, images, competitors, sales, output
-requirements.txt     Python dependencies
-.env.example         API key template
-test_data.xlsx       Input data (provided with the test)
-output/              Generated output (content, competitor, sales — JSON + CSV + markdown)
-images/              Generated lifestyle images, named by SKU
-```
+Output
+
+The program creates:
+
+output/
+├── content.json
+├── content.csv
+├── competitor_analysis.json
+├── competitor_analysis.csv
+├── sales_analysis.json
+├── sales_summary.md
+├── top_skus.csv
+├── low_moving_skus.csv
+├── images_manifest.json
+└── run_log.json
+
+images/
+└── generated lifestyle images
+
+Project structure
+
+main.py
+requirements.txt
+.env.example
+test_data.xlsx
+output/
+images/
+
+The main logic is kept in "main.py" so the complete workflow can be run with a single command.
